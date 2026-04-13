@@ -1,6 +1,7 @@
 package Game.test;
 
 import Game.domain.Option;
+import Game.domain.Service;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -23,5 +24,7 @@ public class GameApp {
 
         System.out.println("Você escolheu: " + chosen);
         System.out.println("PC escolheu: " + cpChosen);
+
+        Service.whoWin(chosen, cpChosen);
     }
 }
